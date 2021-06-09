@@ -1,0 +1,100 @@
+#main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-areas:
+    "headline        headline        student-picture"
+    "student-quote   student-quote   student-picture"
+    "student-profile student-profile student-contact"
+    "experience-grid experience-grid experience-grid"
+    ;
+    align-items: center;
+}
+h1#headline {
+    grid-area: headline;
+}
+div#student-picture{
+    grid-area: student-picture;
+    text-align: center;
+}
+div#student-quote{
+    grid-area: student-quote;
+}
+div#student-profile{
+    grid-area: student-profile;
+}
+div#student-contact{
+    grid-area: student-contact;
+    text-align: center;
+}
+
+#experience-grid {
+    grid-area: experience-grid;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-areas:
+    "exp-code exp-code"
+    "exp-database exp-database"
+    "exp-web exp-design"
+    ;
+}
+#experience-code{
+    grid-area: exp-code;
+}
+#experience-database{
+    grid-area: exp-database;
+}
+#experience-web{
+    grid-area: exp-web;
+}
+#experience-design{
+    grid-area: exp-design;
+}
+
+@media (max-width: 1024px) {
+    #main-grid {
+        column-gap: 35px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "headline headline"
+        "student-quote student-picture"
+        "student-quote student-contact"
+        "student-profile student-profile"
+        "experience-grid experience-grid"
+    }
+    #experience-grid {
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas:
+        "exp-code exp-web"
+        "exp-database exp-design"
+        ;
+
+    }
+}
+@media (max-width: 450px) {
+    #main-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "headline"
+        "student-picture"
+        "student-contact"
+        "student-quote"
+        "student-profile"
+        "experience-grid"
+        ;
+    }
+    #experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "exp-code"
+        "exp-web"
+        "exp-database"
+        "exp-design"
+        ;
+    }
+}
+

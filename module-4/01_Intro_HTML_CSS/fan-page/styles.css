@@ -1,0 +1,48 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(95, 95, 126);
+    color: lightgrey;
+}
+header {
+    text-align: center;
+}
+header > p {
+    font-size: 15px;
+    font-style: italic;
+    color: darkgrey;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+h3 {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 10px;
+}
+img {
+    height: 300px;
+    margin: auto;
+    border: 2px solid red;
+    
+}
+table {
+    margin-left: 20px;
+}
+div.poster {
+    text-align: center;
+    margin: 10px;
+}
+div.quotes {
+    font-style: italic;
+    line-height: 18px;
+    margin-left: 20px;
+}
+a {
+    color: lightgrey;
+    line-height: 20px;
+    margin-left: 20px;
+}
